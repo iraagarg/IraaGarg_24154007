@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pokémon Battle Game</title>
+  <link rel="stylesheet" href="IraaGarg_24154007.css">
+</head>
+<body>
+  <h1>Pokémon Battle Game</h1>
+
+  <div class="scoreboard">
+    <p>Player Wins: <span id="player-wins">0</span></p>
+    <p>CPU Wins: <span id="cpu-wins">0</span></p>
+    <button id="reset-score">Reset Score</button>
+  </div>
+
+  <div class="controls">
+    <button id="new-battle"> New Battle </button>
+    <label style = "padding-left: 30px;">
+    <input type= "checkbox" id="bestof3"> Best-of-3 Mode
+    </label>
+  </div>
+
+  <div style = "padding-top: 30px; font-size:larger; font-weight: bold; color:rgb(125, 218, 254);">
+    <p id="round-info">Round: 1 / 1</p>
+  </div>
+
+  <div class="battlefield">
+    <div class="pokemon" id="pokemon1">
+      <h2 id="poke1-name">---</h2>
+      <img id="poke1-img" src="" alt="">
+      <p>Attack: <span id="poke1-attack"></span></p>
+      <p>Defense: <span id="poke1-defense"></span></p>
+      <p>Speed: <span id="poke1-speed"></span></p>
+      <button id="select-poke1">Select</button>
+    </div>
+
+    <div class="pokemon" id="pokemon2">
+      <h2 id="poke2-name">---</h2>
+      <img id="poke2-img" src="" alt="">
+      <p>Attack: <span id="poke2-attack"></span></p>
+      <p>Defense: <span id="poke2-defense"></span></p>
+      <p>Speed: <span id="poke2-speed"></span></p>
+      <button id="select-poke2">Select</button>
+    </div>
+  </div>
+
+  <h2 id="battle-result">Click "New Battle" to start!</h2>
+
+  <script src="IraaGarg_24154007.js" defer></script>
+</body>
+</html>
